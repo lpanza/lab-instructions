@@ -37,6 +37,8 @@ As always we'll start in the experimentation environment and develop this automa
 7. Everything is blue, you are good to continue!
     ![dspa-minio.png](./images/dspa-minio.png)
 
+    > Note: Please restart the workbench by stopping and starting it, closing the browser tab and reopening it is not enough. This is needed because after the DataSciencePipelineApplication (```dspa```) is created, it injects some variables inside of the Workbench configuration that do not get picked up during runtime, so a complete restart is needed.
+
 ### Set up evaluation pipeline
 
 Now that we have everything set up to be able to run our pipeline in our experimentation namespace, let's take a look at the code and run it!  
@@ -100,8 +102,6 @@ The evaluation pipeline is inside of a repository called `evals`, where both the
     You should see an output like this:
 
     ![trigger-kfp.png](./images/trigger-kfp.png)
-
-    > Note: If you get an error, please restart the workbench by stopping and starting it.
 
     And now navigate to the OpenShift AI dashboard > `Develop & train` > `Pipelines` > `Runs`
 
