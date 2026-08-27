@@ -29,7 +29,7 @@ Let's take our experiment environment from Tiny Llama and point it to the FP8 on
 6.  We need to change every `llama32` and/or `tinyllama` to `llama32-fp8`. And we can bump the `max_token` again. For `summarize`:
 
     ```yaml
-    summarize:
+    summarization:
       enabled: true
       mlflow_prompt_version: latest
       mlflow_prompt: summarization
@@ -73,7 +73,7 @@ Once Llama Stack and backend are running, let's verify it can communicate with t
     ```yaml
 
     LLAMA_STACK_URL: "http://llama-stack-service:8321"
-    summarize:
+    summarization:
       enabled: true
       model: vllm-llama32-fp8/llama32-fp8 # 👈 Update this  ❗︎❗︎
     information-search:
