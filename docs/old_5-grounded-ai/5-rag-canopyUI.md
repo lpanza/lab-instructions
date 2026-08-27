@@ -10,7 +10,7 @@ The Canopy application we deployed already has RAG built-in as you may have seen
 
     ```yaml
     LLAMA_STACK_URL: "http://llama-stack-service:8321"
-    summarize:
+    summarization:
       enabled: true
       model: vllm-llama32/llama32
       temperature: 0.9
