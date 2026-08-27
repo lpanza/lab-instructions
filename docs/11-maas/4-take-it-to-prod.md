@@ -165,7 +165,7 @@ Well, test first.
     ```yaml
 
     LLAMA_STACK_URL: "http://llama-stack-service:8321"
-    summarize:
+    summarization:
       enabled: true
       model: vllm-Llama-3.2-3B-Instruct-FP8/Llama-3.2-3B-Instruct-FP8 # 👈 Update this ❗︎❗︎
       temperature: 0.9

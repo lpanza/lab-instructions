@@ -103,7 +103,7 @@ Like we've done multiple times before, let's update Canopy backend configuration
 2.  We need to change every `llama32-fp8` into MaaS provided version of that model :) For example, for  `summarize`:
 
     ```yaml
-    summarize:
+    summarization:
       enabled: true
       max_tokens: 2048 
       model: vllm-Llama-3.2-3B-Instruct-FP8/Llama-3.2-3B-Instruct-FP8 # 👈 update this ❗️❗️❗️
